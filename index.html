@@ -8,19 +8,24 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/jquery.jscrollpane.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/superfish.js"></script>
-	 <script type="text/javascript" src="js/jquery.mobilemenu.js"></script>
-	 <script type="text/javascript" src="js/jquery.flexslider.js"></script>
-	 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-   <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
-    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>   
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.1.1.js"></script>
+    <script src="js/superfish.js"></script>
+	 <script src="js/jquery.mobilemenu.js"></script>
+	 <script src="js/jquery.flexslider.js"></script>
+	 <script src="js/jquery.easing.1.3.js"></script>
+   <script src="js/jquery.jscrollpane.min.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.js"></script>
+    <script src="js/jquery.columnhover.js"></script>
 	 <script src="js/script.js"></script>
-	 <script type="text/javascript">
+	 <script >
 		  $(window).load(function() {
 				$('.flexslider').flexslider({
 				  animation: "slide"
 				});
+        $( "#tabs" ).tabs({ hide: { effect: "slide", duration: 400 }}, { show: { effect: "clip", duration: 700 } });
+        $('#spec_table').columnHover({hoverClass:'cellhover'});
 			 });
 	 </script>
 	<!--[if lt IE 8]>
@@ -31,7 +36,7 @@
   </div>
 <![endif]-->
     <!--[if lt IE 9]>
-   	<script type="text/javascript" src="js/html5.js"></script>
+   	<script  src="js/html5.js"></script>
     	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
     <![endif]-->
 </head>
@@ -73,53 +78,55 @@
   <section id="content">
   	<div class="container_12">
       <div class="row">
-        <div class="grid_7">
+        <div class="grid_7 maxheight">
           
-          <h2 class="title1 pad1 black_gradient clickable">В центре внимания</h2>
-          
-          <div class="p2 flexslider">
-            <ul class="slides">
-              <li>
-                <img src="images/slide1.jpg" alt="">
-                <div class="slide_banner">
-                  <h3 class="banner_caption">Заголовок новости</h3>
-                  <div class="banner_content">Всероссийская федерация волейбола проводит конкурс на звание титульного спонсора Матча Звезд 2013 мужского Чемпионата России.</div>
-                  <a href="#" class="link1">→ Подробнее</a>
-                </div>
-              </li>
-              <li>
-                <img src="images/slide1.jpg" alt="">
-                <div class="slide_banner">
-                  <h3 class="banner_caption">Заголовок новости</h3>
-                  <div class="banner_content">Всероссийская федерация волейбола проводит конкурс на звание титульного спонсора Матча Звезд 2013 мужского Чемпионата России.</div>
-                  <a href="#" class="link1">→ Подробнее</a>
-                </div>
-              </li>
-              <li>
-                <img src="images/slide1.jpg" alt="">
-                <div class="slide_banner">
-                  <h3 class="banner_caption">Заголовок новости</h3>
-                  <div class="banner_content">Всероссийская федерация волейбола проводит конкурс на звание титульного спонсора Матча Звезд 2013 мужского Чемпионата России.</div>
-                  <a href="#" class="link1">→ Подробнее</a>
-                </div>
-              </li>
-              <li>
-                <img src="images/slide1.jpg" alt="">
-                <div class="slide_banner">
-                  <h3 class="banner_caption">Заголовок новости</h3>
-                  <div class="banner_content">Всероссийская федерация волейбола проводит конкурс на звание титульного спонсора Матча Звезд 2013 мужского Чемпионата России.</div>
-                  <a href="#" class="link1">→ Подробнее</a>
-                </div>
-              </li>
-              <li>
-                <img src="images/slide1.jpg" alt="">
-                <div class="slide_banner">
-                  <h3 class="banner_caption">Заголовок новости</h3>
-                  <div class="banner_content">Всероссийская федерация волейбола проводит конкурс на звание титульного спонсора Матча Звезд 2013 мужского Чемпионата России.</div>
-                  <a href="#" class="link1">→ Подробнее</a>
-                </div>
-              </li>
-            </ul>
+          <div class="p2">
+            <h2 class="title1 pad1 black_gradient clickable">В центре внимания</h2>
+            
+            <div class="flexslider">
+              <ul class="slides">
+                <li>
+                  <img src="images/slide1.jpg" alt="">
+                  <div class="slide_banner">
+                    <h3 class="banner_caption">Заголовок новости</h3>
+                    <div class="banner_content">Всероссийская федерация волейбола проводит конкурс на звание титульного спонсора Матча Звезд 2013 мужского Чемпионата России.</div>
+                    <a href="#" class="arrow link1">Подробнее</a>
+                  </div>
+                </li>
+                <li>
+                  <img src="images/slide1.jpg" alt="">
+                  <div class="slide_banner">
+                    <h3 class="banner_caption">Заголовок новости</h3>
+                    <div class="banner_content">Всероссийская федерация волейбола проводит конкурс на звание титульного спонсора Матча Звезд 2013 мужского Чемпионата России.</div>
+                    <a href="#" class="arrow link1">Подробнее</a>
+                  </div>
+                </li>
+                <li>
+                  <img src="images/slide1.jpg" alt="">
+                  <div class="slide_banner">
+                    <h3 class="banner_caption">Заголовок новости</h3>
+                    <div class="banner_content">Всероссийская федерация волейбола проводит конкурс на звание титульного спонсора Матча Звезд 2013 мужского Чемпионата России.</div>
+                    <a href="#" class="arrow link1">Подробнее</a>
+                  </div>
+                </li>
+                <li>
+                  <img src="images/slide1.jpg" alt="">
+                  <div class="slide_banner">
+                    <h3 class="banner_caption">Заголовок новости</h3>
+                    <div class="banner_content">Всероссийская федерация волейбола проводит конкурс на звание титульного спонсора Матча Звезд 2013 мужского Чемпионата России.</div>
+                    <a href="#" class=" arrowlink1">Подробнее</a>
+                  </div>
+                </li>
+                <li>
+                  <img src="images/slide1.jpg" alt="">
+                  <div class="slide_banner">
+                    <h3 class="banner_caption">Заголовок новости</h3>
+                    <div class="banner_content">Всероссийская федерация волейбола проводит конкурс на звание титульного спонсора Матча Звезд 2013 мужского Чемпионата России.</div>
+                    <a href="#" class="link1">→ Подробнее</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div class="clearfix pad1 blue_gradient">
@@ -203,7 +210,7 @@
               <a href="#" class="btn1">Блокирующие</a>
             </div>
           </div>
-          <div class="clearfix gray_bg1 best_stat">
+          <div class="clearfix gray_bg1 p2 best_stat">
             <div class="best_stat_item">
               <h4 class="title2 best_stat_title"><a href="#" class="blue_link">Сергей Тютлин</a></h4>
               <div class="clearfix fz_14">
@@ -254,6 +261,251 @@
               </div>
             </div>
           </div>
+          
+          <div class="pad1 clearfix black_gradient">
+            <h2 class="f_left title1">Чемпионат России</h2>
+            <div class="f_right btns_wrap">
+              <a href="#" class="btn1">Мужчины</a>
+              <a href="#" class="btn1">Женщины</a>
+            </div>
+          </div>
+
+          <div class="black_bg p2" id="tabs">
+            <div class="clearfix">
+              <ul class="clearfix f_right tabs_nav1">
+                <li class="tabs_nav1_item">
+                  <a href="#tab1" class="tabs_nav1_link">Предварительный</a>
+                </li>
+                <li class="tabs_nav1_item">
+                  <a href="#tab2" class="tabs_nav1_link">Плей офф 1/4</a>
+                </li>
+                <li class="tabs_nav1_item">
+                  <a href="#tab1" class="tabs_nav1_link">Плей офф 1/8</a>
+                </li>
+                <li class="tabs_nav1_item">
+                  <a href="#tab2" class="tabs_nav1_link">Финал</a>
+                </li>
+              </ul>
+            </div>
+            <div class="gray_bg2 tabs1_content_wrap">
+              <div id="tab1">
+                <table class="gray_bg3 table2" id="spec_table">
+                  <tr>
+                    <th>&nbsp;</th>
+                    <th><img src="images/t_team_icon1.png" alt=""></th>
+                    <th><img src="images/t_team_icon2.png" alt=""></th>
+                    <th><img src="images/t_team_icon3.png" alt=""></th>
+                    <th><img src="images/t_team_icon4.png" alt=""></th>
+                    <th><img src="images/t_team_icon5.png" alt=""></th>
+                    <th><img src="images/t_team_icon6.png" alt=""></th>
+                    <th><img src="images/t_team_icon7.png" alt=""></th>
+                    <th><img src="images/t_team_icon8.png" alt=""></th>
+                    <th><img src="images/t_team_icon9.png" alt=""></th>
+                    <th><img src="images/t_team_icon10.png" alt=""></th>
+                    <th><img src="images/t_team_icon11.png" alt=""></th>
+                    <th><img src="images/t_team_icon12.png" alt=""></th>
+                    <th><img src="images/t_team_icon13.png" alt=""></th>
+                    <th><img src="images/t_team_icon14.png" alt=""></th>
+                    <th><img src="images/t_team_icon15.png" alt=""></th>
+                    <th><img src="images/t_team_icon16.png" alt=""></th>
+                  </tr>
+                  <tr>
+                    <td><strong>О</strong></td>
+                    <td>54</td>
+                    <td>50</td>
+                    <td>46</td>
+                    <td>45</td>
+                    <td>44</td>
+                    <td>42</td>
+                    <td>41</td>
+                    <td>36</td>
+                    <td>30</td>
+                    <td>32</td>
+                    <td>24</td>
+                    <td>17</td>
+                    <td>16</td>
+                    <td>15</td>
+                    <td>11</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td><strong>В</strong></td>
+                    <td>54</td>
+                    <td>50</td>
+                    <td>46</td>
+                    <td>45</td>
+                    <td>44</td>
+                    <td>42</td>
+                    <td>41</td>
+                    <td>36</td>
+                    <td>30</td>
+                    <td>32</td>
+                    <td>24</td>
+                    <td>17</td>
+                    <td>16</td>
+                    <td>15</td>
+                    <td>11</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td><strong>П</strong></td>
+                    <td>54</td>
+                    <td>50</td>
+                    <td>46</td>
+                    <td>45</td>
+                    <td>44</td>
+                    <td>42</td>
+                    <td>41</td>
+                    <td>36</td>
+                    <td>30</td>
+                    <td>32</td>
+                    <td>24</td>
+                    <td>17</td>
+                    <td>16</td>
+                    <td>15</td>
+                    <td>11</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td><strong>И</strong></td>
+                    <td>54</td>
+                    <td>50</td>
+                    <td>46</td>
+                    <td>45</td>
+                    <td>44</td>
+                    <td>42</td>
+                    <td>41</td>
+                    <td>36</td>
+                    <td>30</td>
+                    <td>32</td>
+                    <td>24</td>
+                    <td>17</td>
+                    <td>16</td>
+                    <td>15</td>
+                    <td>11</td>
+                    <td>8</td>
+                  </tr>
+                </table>
+              </div>
+              <div id="tab2">
+                <table class="gray_bg3 table2">
+                  <tr>
+                    <th>&nbsp;</th>
+                    <th><img src="images/t_team_icon1.png" alt=""></th>
+                    <th><img src="images/t_team_icon2.png" alt=""></th>
+                    <th><img src="images/t_team_icon3.png" alt=""></th>
+                    <th><img src="images/t_team_icon4.png" alt=""></th>
+                    <th><img src="images/t_team_icon5.png" alt=""></th>
+                    <th><img src="images/t_team_icon6.png" alt=""></th>
+                    <th><img src="images/t_team_icon7.png" alt=""></th>
+                    <th><img src="images/t_team_icon8.png" alt=""></th>
+                    <th><img src="images/t_team_icon9.png" alt=""></th>
+                    <th><img src="images/t_team_icon10.png" alt=""></th>
+                    <th><img src="images/t_team_icon11.png" alt=""></th>
+                    <th><img src="images/t_team_icon12.png" alt=""></th>
+                    <th><img src="images/t_team_icon13.png" alt=""></th>
+                    <th><img src="images/t_team_icon14.png" alt=""></th>
+                    <th><img src="images/t_team_icon15.png" alt=""></th>
+                    <th><img src="images/t_team_icon16.png" alt=""></th>
+                  </tr>
+                  <tr>
+                    <td><strong>О</strong></td>
+                    <td>54</td>
+                    <td>50</td>
+                    <td>46</td>
+                    <td>45</td>
+                    <td>44</td>
+                    <td>42</td>
+                    <td>41</td>
+                    <td>36</td>
+                    <td>30</td>
+                    <td>32</td>
+                    <td>24</td>
+                    <td>17</td>
+                    <td>16</td>
+                    <td>15</td>
+                    <td>11</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td><strong>В</strong></td>
+                    <td>54</td>
+                    <td>50</td>
+                    <td>46</td>
+                    <td>45</td>
+                    <td>44</td>
+                    <td>42</td>
+                    <td>41</td>
+                    <td>36</td>
+                    <td>30</td>
+                    <td>32</td>
+                    <td>24</td>
+                    <td>17</td>
+                    <td>16</td>
+                    <td>15</td>
+                    <td>11</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td><strong>П</strong></td>
+                    <td>54</td>
+                    <td>50</td>
+                    <td>46</td>
+                    <td>45</td>
+                    <td>44</td>
+                    <td>42</td>
+                    <td>41</td>
+                    <td>36</td>
+                    <td>30</td>
+                    <td>32</td>
+                    <td>24</td>
+                    <td>17</td>
+                    <td>16</td>
+                    <td>15</td>
+                    <td>11</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td><strong>И</strong></td>
+                    <td>54</td>
+                    <td>50</td>
+                    <td>46</td>
+                    <td>45</td>
+                    <td>44</td>
+                    <td>42</td>
+                    <td>41</td>
+                    <td>36</td>
+                    <td>30</td>
+                    <td>32</td>
+                    <td>24</td>
+                    <td>17</td>
+                    <td>16</td>
+                    <td>15</td>
+                    <td>11</td>
+                    <td>8</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="title1 pad1 black_gradient clickable">Календарь соревнований</h2>
+          <div class="gray_bg">
+            <div class="wrapper pad_box1 calendar">
+              <div class="calendar_col">
+                <h4 class="title3">Январь</h4>
+                <img src="images/calendar_img.jpg" alt="">
+              </div>
+              <div class="calendar_col">
+                <h4 class="title3">Февраль</h4>
+                <img src="images/calendar_img.jpg" alt="">
+              </div>
+              <div class="calendar_col">
+                <h4 class="title3">Март</h4>
+                <img src="images/calendar_img.jpg" alt="">
+              </div>
+            </div>
+          </div>
 
         </div>
         <div class="grid_5">
@@ -262,7 +514,7 @@
             <a href="#" class="tabs_nav_item">Пресса</a>
           </div>
           <div class="gray_bg1 news_box">
-            <div class="scroll_box">
+            <div class="scroll_box maxheight">
               <ul class="news_list">
                 <li class="news_item">            
                   <h4 class="news_title"><time datatime="2013-03-03" class="news_time">13/<span>03</span></time><a href="#" class="blue_link">Германия: За титул поспорят «Берлин» и «Фридрихсхафен»</a></h4>
@@ -316,8 +568,169 @@
       </div>
     </div>
   </section>
+<!--============================== Links box================================-->
+  <aside class="black_bg links_box">
+    <div class="container_12">
+      <div class="row">
+        <div class="grid_12">
+          <div class="clearfix links_box__inner">
+            <div class="links_col">
+              <h4 class="reg title2">Мужские КЛУБЫ</h4>
+              <ul class="list1">
+                <li class="list1_item"><a href="#" class="link2">ФАКЕЛ Новый Уренгой</a></li>
+                <li class="list1_item"><a href="#" class="link2">ДИНАМО Янтарь</a></li>
+                <li class="list1_item"><a href="#" class="link2">ДИНАМО Москва</a></li>
+                <li class="list1_item"><a href="#" class="link2">ЗЕНИТ Казань</a></li>
+                <li class="list1_item"><a href="#" class="link2">ИСКРА Одинцово</a></li>
+                <li class="list1_item"><a href="#" class="link2">УРАЛ Уфа</a></li>
+                <li class="list1_item"><a href="#" class="link2">ЛОКОМОТИВ Новосибирск</a></li>
+                <li class="list1_item"><a href="#" class="link2">ЛОКОМОТИВ-ИЗУМРУД</a></li>
+                <li class="list1_item"><a href="#" class="link2">БЕЛОГОРЬЕ-МЕТАЛЛОИНВЕСТ</a></li>
+                <li class="list1_item"><a href="#" class="link2">ГАЗПРОМ-ЮГРА</a></li>
+                <li class="list1_item"><a href="#" class="link2">НОВА Новокуйбышевск</a></li>
+                <li class="list1_item"><a href="#" class="link2">ЯРОСЛАВИЧ Ярославль</a></li>
+                <li class="list1_item"><a href="#" class="link2">ТЮМЕНЬ Тюмень</a></li>
+              </ul>
+            </div>
+            <div class="links_col">
+              <h4 class="reg title2">ЖЕНСКИЕ КЛУБЫ</h4>
+              <ul class="list1">
+                <li class="list1_item"><a href="#" class="link2">ЗАРЕЧЬЕ Одинцово</a></li>
+                <li class="list1_item"><a href="#" class="link2">ДИНАМО Янтарь</a></li>
+                <li class="list1_item"><a href="#" class="link2">ДИНАМО Москва</a></li>
+                <li class="list1_item"><a href="#" class="link2">ДИНАМО Казань</a></li>
+                <li class="list1_item"><a href="#" class="link2">ДИНАМО Краснодар</a></li>
+                <li class="list1_item"><a href="#" class="link2">ЛЕНИНГРАДКА Санкт-Петербург</a></li>
+                <li class="list1_item"><a href="#" class="link2">УРАЛОЧКА-НТМК</a></li>
+                <li class="list1_item"><a href="#" class="link2">ОМИЧКА Омск</a></li>
+                <li class="list1_item"><a href="#" class="link2">САМОРОДОК Хабаровск</a></li>
+                <li class="list1_item"><a href="#" class="link2">АВТОДОР-МЕТАР Челябинск</a></li>
+                <li class="list1_item"><a href="#" class="link2">БАЛАКОВСКАЯ-АЭС Балаково</a></li>
+                <li class="list1_item"><a href="#" class="link2">ИНДЕЗИТ Липецк</a></li>
+                <li class="list1_item"><a href="#" class="link2">УНИВЕРСИТЕТ-ТЕХНОЛОГ</a></li>
+              </ul>
+            </div>
+            <div class="links_col">
+              <h4 class="reg title2">Официальный волейбол</h4>
+              <p class="links p3">
+                <a href="#" class="link3">ВФВ</a>
+                <a href="#" class="link3">FIVB</a>
+                <a href="#" class="link3">CEV</a>
+              </p>
+              <h4 class="reg title2">Федерации</h4>
+              <div class="wrapper">
+                <ul class="links_sm_col f_left list1">
+                  <li class="list1_item"><a href="#" class="link2">Азербайджана</a></li>
+                  <li class="list1_item"><a href="#" class="link2">Аргентины</a></li>
+                  <li class="list1_item"><a href="#" class="link2">Бельгии</a></li>
+                  <li class="list1_item"><a href="#" class="link2">Бразилии</a></li>
+                  <li class="list1_item"><a href="#" class="link2">Германии</a></li>
+                  <li class="list1_item"><a href="#" class="link2">Греции</a></li>
+                  <li class="list1_item"><a href="#" class="link2">Израиля</a></li>
+                  <li class="list1_item"><a href="#" class="link2">Италии</a></li>
+                  <li class="list1_item"><a href="#" class="link2">Канады</a></li>
+                  <li class="list1_item"><a href="#" class="link2">Нидерландов</a></li>
+                </ul>
+                <ul class="wrapper list1">
+                  <li class="list1_item"><a href="#" class="link2">Польши</a></li>
+                  <li class="list1_item"><a href="#" class="link2">Сербии</a></li>
+                  <li class="list1_item"><a href="#" class="link2">США</a></li>
+                  <li class="list1_item"><a href="#" class="link2">Украины</a></li>
+                  <li class="list1_item"><a href="#" class="link2">Финляндии</a></li>
+                  <li class="list1_item"><a href="#" class="link2">Франции</a></li>
+                  <li class="list1_item"><a href="#" class="link2">Хорватии</a></li>
+                  <li class="list1_item"><a href="#" class="link2">Чехии</a></li>
+                  <li class="list1_item"><a href="#" class="link2">Швейцарии</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="links_col_last">
+              <h4 class="reg title2">СМИ</h4>
+              <ul class="list1 p2">
+                <li class="list1_item"><a href="#" class="link2">Спорт Экспресс</a></li>
+                <li class="list1_item"><a href="#" class="link2">Советский Спорт</a></li>
+                <li class="list1_item"><a href="#" class="link2">РТР Спорт</a></li>
+              </ul>
+              <h4 class="reg title2">Сайты игроков</h4>
+              <ul class="list1 p2">
+                <li class="list1_item"><a href="#" class="link2">Наталья и Валерия Гончаровы</a></li>
+                <li class="list1_item"><a href="#" class="link2">Тарас Хтей</a></li>
+              </ul>
+              <h4 class="reg title2">Сайты игроков</h4>
+              <ul class="list1">
+                <li class="list1_item"><a href="#" class="link2">АСН Тюменская арена</a></li>
+                <li class="list1_item"><a href="#" class="link2">VolleyCountry.com</a></li>
+                <li class="list1_item"><a href="#" class="link2">PhotoVolley.ru</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <section class="gray_bg4 links_box1">
+    <div class="container_12">
+      <div class="row">
+        <div class="grid_12">
+          <div class="wrapper links_box__inner1">
+            <div class="f_left clearfix">
+              <ul class="f_left links_mid_col list2">
+                <li class="list2_item"><a href="#" class="list2_link">Главная</a></li>
+                <li class="list2_item"><a href="#" class="list2_link">Об агенстве</a></li>
+                <li class="list2_item"><a href="#" class="list2_link">Новости</a></li>
+                <li class="list2_item"><a href="#" class="list2_link">Ссылки</a></li>
+              </ul>
+              <ul class="f_left links_mid_col list2">
+                <li class="list2_item"><a href="#" class="list2_link">Расписание</a></li>
+                <li class="list2_item"><a href="#" class="list2_link">Результаты</a></li>
+                <li class="list2_item"><a href="#" class="list2_link">Положение</a></li>
+                <li class="list2_item"><a href="#" class="list2_link">Статистика</a></li>
+              </ul>
+              <ul class="f_left links_mid_col list2">
+                <li class="list2_item"><a href="#" class="list2_link">Игроки</a></li>
+                <li class="list2_item"><a href="#" class="list2_link">Команды</a></li>
+              </ul>
+            </div>
+            <div class="wrapper al_right">
+              <ul class="list2">
+                <li class="list2_item">г. Москва, Лужники 24, строение 5 УСЗ "Дружба"</li>
+                <li class="list2_item">тел. +7 (499) 246-84-12, факс 8 (495) 785-07-69</li>
+                <li class="list2_item"><a href="#" class="list2_link">info@volleyservice.ru</a></li>
+                <li class="list2_item"><a href="#" class="arrow list2_link">Схема проезда</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="black_bg1 copyright">
+    <div class="container_12">
+      <div class="row">
+        <div class="grid_12">
+          <div class="copyright_inner wrapper">
+            <div class="f_left">
+              &copy; Спортивное агенство «ВолейСервис».
+            </div>
+            <div class="f_right">
+              Дизайн сайта — Simple Visuals
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 <!--==============================footer=================================-->
-  <footer>
+  <footer class="gray_bg4">
+  <div class="container_12">
+    <div class="wrapper">
+      <div class="grid_12">
+        VolleyService.ru - официальный сайт спортивного агентства «Волей Сервис». Использование любых материалов с сайта допускается только при наличии прямой ссылки на сайт VolleyService.ru.
+      </div>
+    </div>
+  </div>
   </footer>
 
   <script>
